@@ -1,0 +1,89 @@
+body {
+  background-color: darkslategray;
+  text-align: center;
+  font-family: "Helvetica Neue", "Lato", "Roboto", "Comic Sans MS", "Comic Relief", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.shush {
+  display: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+big {
+  font-size: 4rem;
+}
+
+@media (min-width: 1081px) {
+  .container {
+    width: 70%;
+    padding: 0px 50px;
+  }
+}
+
+body, :link, :visited {
+  color: snow;
+}
+
+.staszic {
+  color: rgb(216, 165, 41);
+}
+
+@keyframes fade_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#timebar-wrapper {
+  margin-top: 2rem;
+  padding: 0;
+  height: 0.5rem;
+  width: 100%;
+  border: solid 1px slategray;
+}
+
+#timebar {
+  float: right;
+  height: 0.5rem;
+  padding: 0;
+  margin: 0;
+  transition: width 1s;
+  background-color: slategray;
+}
+
+#timebar:after {
+  clear:both;
+}
+
+blockquote {
+  animation: fade_in 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.ancient {
+  opacity: 0;
+}
+
+[title] {
+  text-decoration: underline dotted;
+}

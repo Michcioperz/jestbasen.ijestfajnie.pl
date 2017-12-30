@@ -1,0 +1,1 @@
+new Notification("Staszic nadal nie ma basenu.");
